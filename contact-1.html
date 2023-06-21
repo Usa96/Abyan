@@ -41,54 +41,72 @@
 </head>
 
 <body id="bg">
-    <div class="page-wraper">  
-        <!-- HEADER START -->
-        <header class="site-header header-style-3 mobile-sider-drawer-menu nav-wide">
-           
-            <!-- MAIN BAR START -->
-            <div class="sticky-header main-bar-wraper">
-                <div class="main-bar site-bg-primary">
-                    <div class="container">
-                        <!-- SITE LOGO -->
-                        <div class="sticky-logo">
-                            <a href="index.html">
-                                <img src="images/client-logo/Page_4-removebg-preview.png" width="171" height="49" alt="">
-                            </a>
+    <style>
+        .custom-logo-and-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .custom-logo-middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Add any additional styling for the logo */
+    }
+    
+    .custom-header-nav {
+        /* Add any additional styling for the navigation */
+        width: 80%; /* Adjust the width as needed */
+        margin-left: auto; /* Align the navigation to the right */
+    }
+    
+    </style>
+        
+        <div class="page-wraper"> 
+            <!-- HEADER START -->
+            <header class="site-header header-style-3 mobile-sider-drawer-menu nav-wide">
+                <!-- MAIN BAR START -->
+                <div class="sticky-header main-bar-wraper">
+                    <div class="main-bar site-bg-primary">
+                        <!-- SITE LOGO AND NAVIGATION -->
+                        <div class="container" style="justify-content: center;">
+                            <div class="custom-logo-and-nav">
+                                <div class="sticky-logo">
+                                    <a href="index.html" class="custom-logo-middle">
+                                        <img src="images/client-logo/Page_4-removebg-preview.png" width="171" height="49" alt="">
+                                    </a>
+                                </div>
+                                <div class="header-nav custom-header-nav">
+                                    <ul class="nav navbar-nav">
+                                        <li >
+                                            <a href="index.html">Home</a>
+                                        </li> 
+                                        <li>
+                                            <a href="about-1.html">About us</a>
+                                        </li>
+                                        <!-- <li>
+                                            <a href="portfolio-1.html">Portfolio</a>
+                                        </li> -->
+                                        <!-- <li>
+                                            <a href="blog-grid-3.html">Media</a>
+                                        </li> -->
+                                        <li class="active">
+                                            <a href="contact-1.html">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div class="header-nav navbar-collapse collapse ">
-                            <ul class=" nav navbar-nav">
-                                 <li >
-                                    <a href="index.html">Home</a>
-                                </li> 
-                                <li>
-                                    <a href="about-1.html">About us</a>
-                                </li>
-                                <!-- <li>
-                                    <a href="portfolio-1.html">Portfolio</a>
-                                </li> -->
-                                <!-- <li>
-                                    <a href="blog-grid-3.html">Media</a>
-                                </li> -->
-                                <li class="active">
-                                    <a href="contact-1.html">Contact us</a>
-                                </li>
-                            </ul>
-                        </div>
-
                         <!-- NAV Toggle Button -->
-                        <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggler collapsed">
+                        <button id="mobile-side-drawer" data-target=".custom-header-nav" data-toggle="collapse" type="button" class="navbar-toggler collapsed">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar icon-bar-first"></span>
                             <span class="icon-bar icon-bar-two"></span>
                             <span class="icon-bar icon-bar-three"></span>
                         </button>
-                        <!-- MAIN NAV -->
                     </div>
                 </div>
-            </div>
-
-        </header> 
+            </header>
         <!-- HEADER END -->
         
         <!-- CONTENT START -->
